@@ -29,10 +29,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t santiagosanchez03/docker-graphql:0.0.2 .
+        docker build -t santiagosanchez03/docker-graphql:latest .
 
     - name: Push Docker Image
       run: |
         docker push santiagosanchez03/docker-graphql:0.0.2
+        docker push santiagosanchez03/docker-graphql:latest
     
     # steps:
     # - uses: actions/checkout@v3
